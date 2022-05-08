@@ -1,0 +1,223 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(152, 158, 251);
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  border-radius: 10px;
+  list-style: none;
+}
+/* .nav-links li {
+  
+} */
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+body {
+  font-family: monospace;
+}
+
+/* .result {
+  max-width: 1000px;
+  margin: 0 auto;
+} */
+/* figure {
+  margin: 0px;
+  flex: 1;
+  overflow: hidden;
+} */
+/* img {
+  height: 500px;
+  width: 600px;
+} */
+/* .selected-img {
+  flex: 5;
+} */
+
+/* button {
+  display: flex;
+  margin: 0 auto;
+} */
+
+/*Image Carousell*/
+
+/* .carousel {
+  max-width: 1100px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  position: absolute;
+} */
+
+/* .carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
+
+.selected-img {
+  /* position: absolute; */
+  /* inset: 0; */
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.selected-img > img {
+  display: flex;
+  width: 50%;
+  height: 70%;
+  /* object-fit: cover;
+  object-position: center; */
+  margin: 0 auto;
+}
+/* .selected-img > h3 {
+  display: flex;
+  margin: 0 auto;
+} */
+
+.selected-img[data-active] {
+  opacity: 1;
+  /* z-index: 1; */
+  transition-delay: 0ms;
+}
+
+/*Buttons*/
+
+/* .carousel-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 40px;
+  top: 20%;
+  transform: translateY(-50%);
+  color: rgb(39, 246, 243);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0;
+  background-color: rgb(17, 9, 239);
+} */
+
+/* .carousel-btn:hover,
+.carousel-btn:focus {
+  color: white;
+  background-color: rgba(176, 38, 38, 0.2);
+}
+
+.carousel-btn:focus {
+  outline: 1px solid rgb(241, 1, 1);
+} */
+
+/* .carousel-btn.prev {
+  left: 10rem;
+}
+
+.carousel-btn.next {
+  right: 10rem;
+} */
+
+/*Posts css */
+.posts-result {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.inner-result:hover {
+  background-color: rgb(27, 15, 58);
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+.inner-result {
+  background-color: rgb(2, 6, 56);
+  max-width: 800px;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(206, 206, 231);
+  font-size: 1.05rem;
+}
+.post-image {
+  width: 400px;
+  height: 230px;
+}
+/*Contact*/
+
+.contact-bottom h3,
+p {
+  padding: 5px;
+}
+.error-form {
+  display: none;
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+.contact-container {
+  max-width: 550px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#contactForm {
+  display: grid;
+  grid-row-gap: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.contact-inputs {
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+.contact-subject {
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+.contact-message {
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+}
+#sucess {
+  display: none;
+  color: green;
+}
+
+/*about me*/
+
+.about-me {
+  display: flex;
+  margin: 0 auto;
+}
+.about-me p {
+  font-size: 20px;
+}
+.about-me-page {
+}
+.about-heading {
+  display: flex;
+}

@@ -3,10 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>KK Blog | Home</title>
   </head>
   <body>
-    <h1>HOMLESNURR</h1>
+    <nav>
+      <div class="logo">
+        <h3><a href="index.html">KK Blog</a></h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blogposts.html">My Posts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h1>Welcome to my blog</h1>
+      </div>
+      <h2>Latest Posts</h2>
+      <section class="all-data" all-datas>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn previous" data-karusellu-btn="previous">
+            Previous
+          </button>
+          <button class="carousel-btn next" data-karusellu-btn="next">
+            Next
+          </button>
+
+          <ul class="result" data-bilder>
+            <div class="loading"></div>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/restapi.js"></script>
   </body>
 </html>
